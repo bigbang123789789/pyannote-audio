@@ -126,7 +126,7 @@ visit https://hf.co/{model_id} to accept the user conditions."""
             check_version(
                 "pyannote.audio", config["version"], __version__, what="Pipeline"
             )
-
+        print('config: ',config)
         # initialize pipeline
         pipeline_name = config["pipeline"]["name"]
         Klass = get_class_by_name(
@@ -228,9 +228,9 @@ visit https://hf.co/{model_id} to accept the user conditions."""
                     del d[name]
 
         _parameters = self.__dict__.get("_parameters")
-        print('_parameters',_parameters)
+        
         _instantiated = self.__dict__.get("_instantiated")
-        print('_instantiated',_instantiated)
+        
         
         _pipelines = self.__dict__.get("_pipelines")
         
