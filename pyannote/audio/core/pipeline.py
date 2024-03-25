@@ -228,8 +228,13 @@ visit https://hf.co/{model_id} to accept the user conditions."""
                     del d[name]
 
         _parameters = self.__dict__.get("_parameters")
+        print('_parameters',_parameters)
         _instantiated = self.__dict__.get("_instantiated")
+        print('_instantiated',_instantiated)
+        
         _pipelines = self.__dict__.get("_pipelines")
+        
+        
         _models = self.__dict__.get("_models")
         _inferences = self.__dict__.get("_inferences")
 
